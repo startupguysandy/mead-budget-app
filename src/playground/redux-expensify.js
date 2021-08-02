@@ -20,11 +20,13 @@ const addExpense = (
 	}
 });
 
+// Remove Expense
 const removeExpense = ({ id } = {}) => ({
 	type: 'REMOVE_EXPENSE',
 	id
 });
 
+// Edit Expense
 const editExpense = (id, updates) => ({
 	type: 'EDIT_EXPENSE',
 	id,
